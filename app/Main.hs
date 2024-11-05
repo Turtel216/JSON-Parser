@@ -5,7 +5,7 @@ import Data.Char
 
 data JsonValue = JsonNull
                 | JsonBool Bool 
-                | JsonNumber Integer -- Implement Floating point numbers
+                | JsonNumber Integer -- TODO Implement Floating point numbers
                 | JsonString String
                 | JsonArray [JsonValue]
                 | JsonObject [(String, JsonValue)]
