@@ -25,6 +25,7 @@ The parser is implemented using a custom ``Parser`` type that follows functional
 
 The following features are yet to be implemented:
 
+- [ ] Add Proper **Testing**
 - [ ] **Floating Point Numbers**: Currently, only integers are supported in ``JsonNumber``. Parsing for floating-point numbers has not been implemented.
 - [ ] **Error Reporting**: The parser only returns ``Nothing`` for errors without any indication of what went wrong. Adding detailed error reporting would make the parser more user-friendly and easier to debug.
 - [ ] **String Escape Sequences**: The ``jsonString`` parser currently does not handle escape sequences (e.g., \", \\, \n). This needs to be added for full JSON compliance.
