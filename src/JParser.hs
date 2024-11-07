@@ -1,4 +1,4 @@
-module Main where
+module JParser where
 
 import Control.Applicative
 import Data.Char
@@ -106,6 +106,3 @@ jsonObject = JsonObject <$> (charP '{'
 
 jsonValue :: Parser JsonValue 
 jsonValue = jsonNull <|> jsonBool <|> jsonNumber <|> jsonString <|> jsonArray <|> jsonObject
-
-main :: IO ()
-main = undefined
