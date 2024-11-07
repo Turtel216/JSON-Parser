@@ -29,10 +29,11 @@ test-suite jparser-test
     import:           warnings
     default-language: Haskell2010
     -- other-modules:
-    -- other-extensions:
+    other-extensions: OverloadedStrings
     type:             exitcode-stdio-1.0
     hs-source-dirs:   test
     main-is:          Main.hs
     build-depends:
         base ^>=4.17.2.1,
-        jparser
+        jparser,
+        HUnit ^>=1.6.2.0
