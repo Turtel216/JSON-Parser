@@ -1,6 +1,5 @@
 module Main where
 
-import Control.Applicative
 import JParser
 import Test.HUnit
 
@@ -132,7 +131,7 @@ testWhiteSpace =
   TestList
     [ "parse spaces" ~: Just "   " ~=? parse whiteSpace "   ",
       "parse mixed whitespace" ~: Just "\t \n " ~=? parse whiteSpace "\t \n ",
-      "parse no whitespace" ~: Just "" ~=? parse whiteSpace "abc"
+      "parse no whitespace" ~: Nothing ~=? parse whiteSpace "abc"
     ]
 
 -- Run all tests
