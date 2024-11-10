@@ -18,6 +18,7 @@ common warnings
 
 library
     import:           warnings
+    ghc-options: -O1
     exposed-modules:  JParser
     -- other-modules:
     -- other-extensions:
